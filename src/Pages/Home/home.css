@@ -1,0 +1,237 @@
+.home-container {
+  display: flex;
+}
+
+.step-fix-mobile {
+  display: none;
+}
+
+
+.step-content {
+  width: 100%;
+  margin-top: 72px;
+}
+
+.step-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  position: fixed;
+  box-sizing: border-box;
+}
+
+.step-fix {
+  min-width: 220px;
+  padding: 125px 20px 0px 20px;
+  box-sizing: content-box;
+}
+
+.step-button {
+  background: transparent;
+  text-align: left;
+  border: none;
+  padding: 10px 13px 10px 13px;
+  font-size: 14px;
+  width: 100%;
+  margin-right: 8px;
+}
+
+.step-button.active {
+  background: #456efd;
+  color: white;
+  border-radius: 10px;
+}
+
+/* .cart-box {
+  display: flex;
+} */
+
+.cart-item__price {
+  margin-top: 16px;
+  margin-left: 24px;
+}
+
+.cart-summary {
+  background: white;
+  padding: 16px 12px;
+  border-radius: 10px;
+}
+
+.step-button__smart-text {
+  background: linear-gradient(90deg, #456efd, #fc02c9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0;
+}
+
+.step-button__smart {
+  border: 2px solid transparent; /* прозрачная рамка */
+  border-radius: 12px;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, #456efd, #fc02c9) border-box; /* градиентная рамка */
+  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 10px 13px 10px 13px;
+  display: flex;
+  align-items: center;
+  color: transparent;
+  width: 100%;
+  margin-right: 8px;
+}
+
+.step-button__smart.active {
+  background: linear-gradient(90deg, #456efd, #fc02c9);
+  color: black;
+  border: none;
+}
+
+.step-button__smart.active > .step-button__smart-text {
+  background: white;
+  background-clip: text;
+}
+
+.step-button__smart img {
+  margin-right: 16px;
+}
+
+.step-button svg {
+  margin-right: 16px;
+}
+
+.cart-summary__checkout {
+  padding: 11px 50px;
+  background: #456efd;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.empty-cart {
+  width: 100%;
+  height: 578px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-cart__title {
+  font-size: 16px;
+  margin: 12px 0px 16px 0px;
+}
+
+.empty-cart__button {
+  width: 282px;
+  padding: 12px 0px;
+  background: #456efd;
+  border: none;
+  color: white;
+  border-radius: 12px;
+}
+
+.empty-cart__img {
+  width: 84px;
+}
+
+@media screen and (max-width: 430px) {
+  .home-container {
+    flex-direction: column-reverse;
+  }
+
+  .step-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 0px;
+    background: white;
+    z-index: 999;
+  }
+
+  .step-fix {
+    display: none;
+  }
+  .step-fix-mobile {
+    display: block !important;
+    min-width: 220px;
+    padding: 0;
+    box-sizing: content-box;
+  }
+
+  .step-button__smart-mobile {
+    background: transparent;
+    border: none;
+    font-size: 13px;
+  }
+
+  .step-button,
+  .step-button__smart {
+    border-radius: 0px !important;
+    text-align: center;
+    width: 100%;
+    min-width: 0;
+    margin: 0 !important;
+    font-size: 13px;
+    box-sizing: border-box;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: #A2ACB0;
+  }
+
+  .step-button.active,
+  .step-button__smart.active {
+    background: transparent;
+    color: #456efd !important;
+    border: none !important;
+  }
+
+  .step-button.active svg,
+  .step-button__smart.active svg {
+    color: #456efd !important;
+    fill: #456efd !important;
+    border-radius: 12px;
+    width: 60%;
+    background: #EDF2FF;
+  }
+
+  .step-button__smart.active {
+    border: 2px solid #fc02c9 !important;
+    background: #fff !important;
+    color: #fc02c9 !important;
+  }
+
+  .step-button svg,
+  .step-button__smart svg {
+    width: 22px;
+    height: 22px;
+    margin: 0 auto 2px auto;
+    display: block;
+  }
+  .mobile-smart-btn {
+    width: 36px;
+    height: 26px;
+    margin: 0 auto;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+  }
+  .step-button__smart-mobile.active > .mobile-smart-btn {
+    background: linear-gradient(90deg, #456efd, #fc02c9);
+  }
+  .mobile-smart-btn img {
+    width: 100%;
+    height: 22px;
+    object-fit: contain;
+  }
+}

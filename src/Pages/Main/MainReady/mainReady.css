@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+
+.main-ready {
+  background-image: url(../../../assents//images//BgReady.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 100px 0px 80px 0px;
+  text-align: center;
+}
+.main-ready-image {
+  margin-bottom: 70px;
+}
+
+.main-ready-title {
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.main-ready-description {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.main-ready-button {
+  background: #456EFD;
+  padding: 10px 12px;
+  border-radius: 12px;
+  color: white;
+  border: none;
+}
+
+
+
+@media screen and (max-width: 430px) {
+  .main-ready-image {
+    width: 56px;
+    height: 43px;
+    margin-bottom: 30px;
+  }
+  .main-ready {
+    padding: 30px 0px 30px 0px;
+    border-radius: 20px;
+  }
+  .main-ready-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+}

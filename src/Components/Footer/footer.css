@@ -1,0 +1,35 @@
+
+.footer {
+  display: flex;
+  align-items: flex-end;
+  padding: 50px 0px;
+  padding-left: 220px;
+}
+
+.footer-logo {
+  margin-right: 57px;
+}
+.footer-items__text {
+  margin-bottom: 10px;
+  color: #606060;
+  margin-right: 20px;
+}
+
+.text-blue {
+  color: #456EFD;
+}
+
+
+@media screen and (max-width: 600px) {
+  .footer {
+    display: flex;
+    padding: 50px 0px;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 80px;
+    align-items: center;
+  }
+  .footer-logo {
+    margin-right: 0;
+  }
+}

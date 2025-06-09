@@ -1,0 +1,111 @@
+
+.main-service {
+  border-radius: 16px;
+  text-align: center;
+}
+
+.main-service__title {
+  font-family: "Manrope", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 60px;
+}
+
+.main-service__content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 49px;
+  flex-wrap: wrap;
+}
+
+.main-service__card {
+  flex: 1;
+  max-width: 450px;
+  padding: 20px;
+  border: 1px solid #407bff;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-height: 494px;
+}
+
+.main-service__image {
+  width: 100%;
+  max-width: 396px;
+  margin: 0 auto 20px;
+}
+
+.main-service__card-title {
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.main-service__card-description {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+}
+
+.main-service__features {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.main-service__feature {
+  padding: 25px 20px 25px 20px;
+  border: 1px solid #407bff;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 400px;
+}
+
+.main-service__feature-title {
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.main-service__feature-description {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 0;
+}
+
+
+
+@media screen and (max-width: 430px) {
+  .main-service__features {
+    gap: 16px;
+  }
+  .main-service__feature {
+    width: 100%;
+  }
+  .main-service__content {
+    gap: 16px;
+  }
+  .main-service__feature-title {
+    font-size: 16px;
+  }
+  .main-service__feature-description {
+    font-size: 14px;
+  }
+  .main-service__title {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 900;
+  }
+}

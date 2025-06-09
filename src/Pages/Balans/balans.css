@@ -1,0 +1,322 @@
+.balans {
+  padding: 32px 40px 32px 24px;
+  background: #EFF0F2;
+}
+
+.balans-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.balans-amount {
+  background: #fff;
+  padding: 14px 12px;
+  border-radius: 12px;
+  margin-bottom: 0;
+  border: 1px solid #fff;
+  margin-right: 16px;
+}
+
+.balans-header {
+  display: flex;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.balans-buttons {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+}
+
+.balans-button {
+  padding: 12px;
+  border-radius: 12px;
+  margin: 0px 8px 0px 0px;
+  background: transparent;
+  color: #606060;
+  border: 1px solid #606060;
+}
+
+.balans-button:last-child {
+  margin-left: 0px;
+}
+
+.balans-button.active {
+  background: #456EFD;
+  color: #fff;
+  border: 1px solid #456EFD;
+}
+
+.balans-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.balans-container {
+  margin-bottom: 30px;
+}
+
+.balans-operations {
+  padding: 16px;
+  background: #fff;
+  border-radius: 16px;
+  width: 384px;
+}
+
+.balans-operation-filters {
+  margin-bottom: 0px !important;
+}
+
+.balans-operation-filter {
+  font-size: 14px !important;
+  padding: 8px !important;
+  font-weight: 300 !important;
+  text-transform: capitalize !important;
+  margin-right: 8px !important;
+  border: 1px solid #606060 !important;
+  color: #606060 !important;
+  border-radius: 8px !important;
+}
+
+.balans-operation-filter:last-child {
+  margin-right: 0px !important;
+}
+
+.balans-operation-filter.active {
+  color: white !important;
+  border: 1px solid #456EFD !important;
+  background: #456EFD !important;
+}
+
+.top-up-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.top-up-method {
+  font-size: 16px;
+  font-weight: medium;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.top-up-input-container {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.top-up-label {
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 8px;
+  white-space: nowrap;
+  min-width: 130px;
+  display: block;
+}
+
+.top-up-method {
+  display: flex;
+  align-items: center;
+}
+
+.top-up-label__select {
+  margin: 0px;
+  margin-right: 8px;
+}
+
+.top-up-input__select>div {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.top-up-input {
+  width: 100%;
+  border-radius: 6px;
+  padding-left: 4px;
+  border: 1px solid #606060;
+}
+
+.top-up-input::-webkit-outer-spin-button,
+.top-up-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.top-up-input {
+  -moz-appearance: textfield;
+}
+
+.top-up-button {
+  background: #456EFD;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #456EFD;
+  padding: 8px 0px;
+  border-radius: 8px;
+}
+
+
+
+.balans-history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  color: #000;
+  padding: 16px;
+  margin: 8px 0px;
+  max-width: 486px;
+  border-radius: 20px;
+}
+
+.balans-history-date {
+  margin-bottom: 0;
+}
+
+.balans-history-date__span {
+  color: #456EFD;
+}
+
+
+
+.balans-history-status__success {
+  background: #456EFD;
+  color: #fff;
+  padding: 4px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  width: 100px;
+  text-align: center;
+}
+
+.balans-history-status__checking {
+  background: #EDF2FF;
+  color: #456EFD;
+  border-radius: 8px;
+  padding: 4px 8px;
+  width: 100px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.balans-history-status__denied {
+  color: #606060;
+  border: 1px solid #606060;
+  border-radius: 8px;
+  padding: 4px 8px;
+  width: 100px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.balans-method-mobile {
+  display: none;
+}
+
+@media (max-width: 430px) {
+  .balans-method-mobile {
+    display: block;
+  }
+
+  .balans-method {
+    display: none;
+  }
+
+  .balans-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    margin: 16px 0px;
+    align-items: flex-start;
+  }
+
+  .balans-button {
+    width: 33.3%;
+  }
+
+  .balans-buttons {
+    flex-direction: row;
+    margin: 16px 0px;
+    width: 100%;
+  }
+
+  .balans-amount {
+    width: 100%;
+    text-align: center;
+  }
+
+  .balans-button:last-child {
+    margin-right: 0px;
+  }
+
+  .balans-history-item {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  /* Первый блок (Дата) */
+  .balans-history-date {
+    order: 1;
+    flex: 1;
+  }
+
+  /* Третий блок (Успешно) */
+  .balans-history-status__success {
+    order: 2;
+    margin-left: auto;
+    /* уводит элемент вправо */
+  }
+  .balans-history-status__checking {
+    order: 2;
+    margin-left: auto;
+    /* уводит элемент вправо */
+  }
+  .balans-history-status__denied {
+    order: 2;
+    margin-left: auto;
+    /* уводит элемент вправо */
+  }
+  /* Второй блок (Сумма) */
+  .balans-history-amount {
+    order: 3;
+    width: 100%;
+    /* на новой строке */
+    margin-top: 8px;
+  }
+
+  .balans-history-item {
+    flex-wrap: wrap;
+  }
+
+  .balans-history-date__span {
+    margin-left: 4px;
+  }
+
+  .balans-operations {
+    width: 330px;
+  }
+
+  .balans-operation-filter {
+    white-space: nowrap;
+    margin-right: 0px;
+  }
+
+  
+
+  .balans-operation-slider {
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 8px;
+    display: flex;
+    width: 330px;
+  }
+}

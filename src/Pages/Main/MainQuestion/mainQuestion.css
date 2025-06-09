@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+
+.faq-title {
+  font-family: "Manrope", sans-serif;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 900;
+}
+
+.arrow {
+  color: #407bff;
+}
+
+
+.faq-box {
+  width: 588px;
+  margin: 0 auto;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  border: 1px solid #407bff;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  padding: 25px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  font-size: 16px;
+  color: #555;
+  padding: 0 0;
+  margin-top: 12px;
+}
+
+.faq-answer.open {
+  max-height: 200px; /* Укажите максимальную высоту, достаточную для текста */
+  padding: 10px 0;
+}
+
+
+@media screen and (max-width: 430px) {
+  .faq-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-weight: 900;
+  }
+  .faq-box {
+    width: 100%;
+  }
+  .faq-question > span {
+    font-size: 16px;
+  }
+  .faq-answer {
+    font-size: 12px;
+  }
+}
+

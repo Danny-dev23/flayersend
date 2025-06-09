@@ -1,0 +1,181 @@
+body {
+  overflow: overlay !important;
+}
+
+.header {
+  padding: 12px 40px;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  margin-bottom: 90px;
+  width: 100%;
+  background: white;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.account-info-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.telegram-login {
+  background: #456efd;
+  border: none;
+  padding: 11px 12px;
+  border-radius: 10px;
+  color: white;
+}
+
+.telegram-login img {
+  padding-right: 5px;
+}
+
+.telegram-login-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #456efd;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.account-info__images {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.nav-cart {
+  background: transparent;
+  border: none;
+  position: relative;
+}
+
+.account-info {
+  background: transparent;
+  border: none;
+}
+
+.account-info__title {
+  padding: 0px 5px;
+  text-transform: capitalize;
+}
+
+.button-header {
+  display: flex;
+  align-items: center;
+}
+
+.header-balans {
+  padding: 10px 15px;
+  border: 1px solid #456EFD;
+  color: #456EFD;
+  border-radius: 15px;
+  margin-right: 40px;
+}
+
+.header-account__info-icons {
+  margin-right: 8px;
+}
+
+.MuiList-root {
+  width: 193px;
+}
+
+.MuiPaper-elevation {
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+.header-account__info-menu {
+  top: 18px !important;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #456efd;
+  color: white;
+  border-radius: 50%;
+  padding: 0px 5px;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 430px) {
+  .telegram-login {
+    display: none;
+  }
+  .telegram-login-button__text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .account-info-center {
+    display: none !important;
+  }
+  .header-balans {
+    margin-right: 16px;
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .nav {
+    padding: 0;
+  }
+  .header {
+    padding: 20px 15px 8px 15px;
+    background: #f4f5f7;
+  }
+  .nav-logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  .account-info-center {
+    display: none;
+  }
+  .nav-cart {
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+  }
+  .cart-count {
+    top: -5px;
+    right: -5px;
+  }
+  .nav-cart img {
+    width: 18x;
+    height: 18px;
+  }
+  .telegram-login-button {
+    padding: 10px 10px;
+  }
+  .account-info__images {
+    margin-right: 0;
+  }
+}

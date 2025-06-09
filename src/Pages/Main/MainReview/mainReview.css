@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+
+.main-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0px 112px 150px;
+  background: #EDF2FF;
+  margin: 0px 80px 16px 32px;
+}
+
+.main-review__header {
+  position: relative;
+  width: 70%;
+}
+
+.main-review__header-quote-mark {
+  position: absolute;
+  top: -60px;
+  left: -95px;
+}
+
+.main-review__header-title {
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.main-review__header-subtitle {
+  color: #606060;
+  font-size: 16px;
+}
+
+.main-review__card-position {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.main-review__cards {
+  display: flex;
+  width: 65%;
+}
+
+.main-review__card-header {
+  margin-bottom: 32px;
+}
+
+.main-review__card-header-label {
+  margin-left: 10px;
+}
+
+.main-review__card {
+  background: white;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.main-review__card-body-text {
+  margin-left: 16px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
+
+.box-small {
+ width: 384px;
+ position: absolute;
+ bottom: -55px;
+}
+.box-medium {
+  width: 384px;
+  margin-right: 32px;
+  margin-top: 102px;
+}
+.box-large {
+  width: 488px;
+  margin-bottom: 27px;
+  position: absolute;
+  top: -60px;
+}
+
+
+.main-review__card-body {
+  display: flex;
+  align-items: flex-start;
+}

@@ -1,0 +1,429 @@
+.my-bots {
+  background: #f4f5f7;
+  min-height: 100vh;
+  padding: 30px 40px;
+}
+
+.my-bots__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.my-bots__add-btn {
+  background: #3b7bfd;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 18px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.my-bots__add-btn:hover {
+  background: #2563d6;
+}
+
+.my-bots__empty {
+  background: #fff;
+  border-radius: 16px;
+  padding: 14px 24px;
+  color: #222;
+  font-size: 1.1rem;
+  margin-top: 8px;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(60, 60, 60, 0.04);
+}
+
+.my-bots__list {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.my-bots__item {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(60, 60, 60, 0.06);
+  padding: 18px 24px;
+  min-width: 220px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+.my-bots__item-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.my-bots__add-form-block {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px 32px;
+  margin: 24px 0;
+  box-shadow: 0 2px 8px rgba(60,60,60,0.06);
+  max-width: 420px;
+}
+.my-bots__add-form-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.my-bots__add-form-desc {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.my-bots__add-form-example {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.my-bots__add-form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-bots__item__head-text {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+
+
+.my-bots__item__head {
+  display: flex;
+  align-items: center;
+}
+
+.my-bots__item-title-user-text-number {
+  color: #3b7bfd;
+}
+
+.my-bots__item-title-user {
+  display: flex;
+
+}
+.my-bots__item-title-user-text {
+  margin-right: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.my-bots__bookings {
+  padding: 12px 13px;
+  background: #456EFD;
+  color: #fff;
+  border-radius: 15px;
+  width: 66px;
+}
+
+.my-bots__bookings-text {
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.my-bots__item__head-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 15px;
+}
+.my-bots__item__head-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.my-bots__item-title-actions {
+  text-align: right;
+  margin-bottom: 32px;
+}
+
+.my-bots__item-title-text {
+  margin-left: 16px;
+}
+
+.my-bots__item-title-text-active {
+  background: #3b7bfd;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 4px;
+  border-radius: 8px;
+  margin-left: 12px;
+}
+.my-bots__item-title-text-name {
+  margin-bottom: 0;
+}
+.my-bots__item-title-text-category {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.my-bots__save-btn {
+  background: #3b7bfd;
+  color: #fff;
+  border: 1px solid #3b7bfd;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.my-bots__save-btn:hover {
+  background: #2563d6;
+}
+.my-bots__cancel-btn {
+  background: #fff;
+  color: #606060;
+  border: 1px solid #606060;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: 16px;
+  border-radius: 8px;
+}
+.my-bots__edit-input {
+  max-width: 263px !important;
+  padding: 4px !important;
+  border-radius: 8px !important;
+  border: 1px solid #606060 !important;
+  min-width: 263px !important;
+}
+
+.my-bots__upload-btn {
+  padding: 12px 33px;
+  border-radius: 15px;
+  color: white;
+  background: #3b7bfd;
+  border: none;
+}
+.my-bots__edit-actions {
+ margin-top: 16px;
+}
+
+.my-bots__edit-btn,
+.my-bots__delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #606060;
+  padding: 4px;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+
+}
+
+.my-bots__edit-form-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.my-bots__edit-form-desc {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+
+
+.my-bots__edit-btn:active,
+.my-bots__delete-btn:active {
+  color: #456EFD;
+}
+
+.my-bots__item {
+  position: relative; /* Для позиционирования модалки внутри карточки */
+
+}
+
+/* Встроенное модальное окно удаления */
+.my-bots__modal-inline {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px 22px 14px 22px;
+  min-width: 260px;
+  box-shadow: 0 2px 8px rgba(60,60,60,0.13);
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.my-bots__modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.my-bots__modal-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.my-bots__modal-close {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.2s;
+  margin-left: 10px;
+}
+.my-bots__modal-close:hover {
+  color: #222;
+}
+
+.my-bots__modal-body {
+  margin-bottom: 18px;
+}
+
+.my-bots__modal-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.my-bots__mobile {
+  display: none;
+}
+.my-bots__pc {
+  display: block;
+}
+
+@media (max-width: 430px) {
+  .my-bots__pc {
+    display: none;
+  }
+  .my-bots__mobile {
+    display: block;
+  }
+  .my-bots__item-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .my-bots__item-title {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .my-bots__upload-btn {
+    padding: 7px 55px;
+    margin-top: 16px;
+  }
+  .my-bots__item {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+  }
+  .my-bots-active__btn-text {
+    margin-left: 16px;
+  }
+  .my-bots__item-title-text-active {
+    margin-left: 0;
+  }
+  .my-bots__item-title-text-name {
+    font-size: 14px;
+  }
+  .my-bots__item-title-actions {
+    display: flex;
+    align-items: center;
+  }
+  .my-bots__item-title-user-text img {
+    width: 15px;
+  }
+  .my-bots__item-title-user-text-number {
+    font-size: 14px !important;
+  }
+  .my-bots__item__head-image {
+    margin-left: 0px;
+  }
+  .my-bots__item__head-image {
+    width: 60px;
+    height: 60px;
+    overflow: visible;
+  }
+  .my-bots__bookings-close__slot {
+    background: #EFF0F2;
+    color: #606060;
+    padding: 3px 6px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+}
+
+.my-bots__buy-mobile {
+  margin-top: 20px;
+  padding: 0 15px;
+}
+
+.my-bots__buy-mobile-group {
+  margin-bottom: 20px;
+}
+
+.my-bots__buy-mobile-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.my-bots__buy-mobile-time {
+  font-size: 16px;
+  color: #3b7bfd;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.my-bots__buy-mobile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.my-bots__buy-mobile-bot {
+  font-size: 14px;
+  color: #333;
+}
+
+.my-bots__buy-mobile-amount {
+  font-size: 14px;
+  color: #666;
+}
+
+.my-bots__buy-mobile-status {
+  font-size: 14px;
+  color: #888;
+}

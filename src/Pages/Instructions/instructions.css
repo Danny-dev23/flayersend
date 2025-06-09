@@ -1,0 +1,50 @@
+
+.instructions {
+  background: #EFF0F2;
+  padding: 32px 40px 113px 24px;
+  height: calc(100vh - 270px);
+}
+
+.instructions-title {
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.instructions-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px ;
+}
+
+.instructions-box__card {
+  padding: 24px 35px 24px 24px;
+  background: white;
+  border-radius: 20px;
+}
+
+.instructions-box__card-title {
+  color: #456EFD;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.instructions-box__card-text {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+
+
+@media screen and (max-width: 430px) {
+  .instructions-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .instructions {
+    height: 100%;
+    padding: 32px 24px 40px 24px;
+  }
+}

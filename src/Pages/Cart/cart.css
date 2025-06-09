@@ -1,0 +1,339 @@
+.cart-item--active {
+  border: 3px solid #456EFD !important;
+  border-radius: 16px;
+  background: #f7faff;
+}
+
+.cart-item {
+  border: 3px solid transparent;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.cart-box__items-left {
+  margin-bottom: 16px;
+  width: 80%;
+  max-width: 1020px;
+}
+
+
+.item-text__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item__price {
+  margin-left: 24px;
+  width: 100%;
+  max-width: 420px;
+  margin-top: 0;
+}
+
+.cart-box__items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+
+.cart-actions__button {
+  padding: 12px 10px;
+  background: #fff;
+  color: #456efd;
+  border-radius: 12px;
+  border: 1px solid #fff;
+  min-width: 140px;
+}
+
+.cart-remove-btn {
+  padding: 12px 10px;
+  color: #606060;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  margin-left: 8px;
+}
+
+.cart-remove-btn:disabled {
+  background: #e0e0e0;
+  border: 1px solid #e0e0e0;
+  color: #888;
+  cursor: not-allowed;
+}
+
+
+.item-price-cart {
+  background: #456efd;
+  border: none;
+  color: white;
+  padding: 17px 20px;
+  border-radius: 15px;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.cart-summary__checkout--disabled {
+  background: #e0e0e0 !important;
+  color: #888 !important;
+  cursor: not-allowed !important;
+  border: none;
+}
+
+.cart-item__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px 10px 0px 10px;
+  border-top: 1px solid #eee;
+}
+
+.cart-item__post {
+  display: flex;
+  align-items: center;
+}
+
+.post-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.post-status__icon {
+  color: #4CAF50;
+}
+
+.post-link {
+  text-decoration: none;
+  color: #1976d2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.post-link:hover {
+  text-decoration: underline;
+}
+
+.create-post-btn {
+  padding: 8px 16px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.create-post-btn:hover {
+  background: #1565c0;
+}
+
+.date-picker {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 180px;
+  font-size: 14px;
+}
+
+/* Стили для календаря */
+.react-datepicker {
+  font-family: inherit;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.react-datepicker__header {
+  background-color: #f7faff;
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.react-datepicker__time-container {
+  border-left: 1px solid #ddd;
+}
+
+.react-datepicker__time-container .react-datepicker__time {
+  background-color: #f7faff;
+}
+
+.react-datepicker__time-container .react-datepicker__time-box {
+  width: 100px;
+}
+
+.react-datepicker__time-container .react-datepicker__time-list-item {
+  padding: 8px 10px;
+}
+
+.react-datepicker__time-container .react-datepicker__time-list-item:hover {
+  background-color: #e3f2fd;
+}
+
+.react-datepicker__day--selected {
+  background-color: #1976d2 !important;
+  border-radius: 4px;
+}
+
+.react-datepicker__day:hover {
+  background-color: #e3f2fd;
+  border-radius: 4px;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #e3f2fd;
+  border-radius: 4px;
+}
+
+.react-datepicker__time-list-item--selected {
+  background-color: #1976d2 !important;
+}
+
+.catalog-item {
+  border: 3px solid #fff;
+}
+
+.date-picker:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+.cart-summary__checkout {
+  width: 100%;
+  padding: 12px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.cart-summary__checkout:hover:not(.cart-summary__checkout--disabled) {
+  background: #1565c0;
+}
+
+.cart-summary__checkout--disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.cart-mobile {
+  display: none;
+}
+
+
+@media screen and (max-width: 430px) {
+  .cart-box__items {
+    flex-direction: column;
+  }
+  .cart-mobile {
+    display: block;
+  }
+  .cart-item__price {
+    max-width: 100%;
+  }
+
+  .cart-box__items-left {
+    width: 100%;
+  }
+
+  .cart-mobile__hidden {
+    display: none;
+  }
+
+  .cart-mobile__hidden--open {
+    display: block;
+  }
+
+  .catalog-item--desktop {
+    display: none;
+  }
+
+  .cart-mobile__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cart-mobile__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+  }
+  .cart-mobile__more {
+    background: #EDF2FF;
+    border: none;
+    color: #456EFD;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 4px 8px;
+    border-radius: 12px;
+    cursor: pointer;
+    min-width: 108px;
+  }
+  .cart-mobile__text {
+    margin-left: 8px;
+    max-width: 180px;
+  }
+  .catalog-item {
+    padding: 12px;
+  }
+  .item-price-cart {
+    padding: 12px 8px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .cart-item__details {
+    flex-direction: column;
+  }
+  .create-post-btn {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  .cart-item__post {
+    width: 100%;
+  }
+  .cart-item__calendar {
+    width: 100%;
+  }
+  .date-picker {
+    width: 100%;
+    text-align: center;
+  }
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+  .cart-item__details {
+    margin-top: 20px;
+  }
+  .cart-item__post-mobile {
+    width: 100%;
+    text-align: center;
+  }
+  .cart-summary {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0px;
+  }
+  .cart-summary__total {
+    color: #456EFD;
+    background: white;
+    border-radius: 12px;
+    padding: 12px 10px;
+  }
+  .cart-summary__bots {
+    background: white;
+    border-radius: 12px;
+    padding: 12px 10px;
+  }
+  .cart-item__price {
+    margin-left: 0;
+  }
+}
